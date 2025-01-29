@@ -1,0 +1,8 @@
+services:
+  mdns:
+    image: ghcr.io/jbrazio/mdns-repeater-docker:latest
+    network_mode: host
+    restart: always
+
+    environment:
+      - IFDEV=eth0 br-a41b22f4351d br-2a2b3c5d7e7f
