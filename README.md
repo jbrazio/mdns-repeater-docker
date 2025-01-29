@@ -29,7 +29,7 @@ To deploy the `mdns-repeater-docker`, you can use the provided `docker-compose.y
    ```yaml
    services:
      mdns:
-       image: mdns:latest
+       image: ghcr.io/jbrazio/mdns-repeater-docker:latest
        network_mode: host
        restart: always
        environment:
